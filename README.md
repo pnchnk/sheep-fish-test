@@ -10,12 +10,12 @@ This is a test task for SheepFish.
 
 ## Tech
 
-- [React] - Framework
-- [Redux] - Store manager
-- [RTK Query] - Async request
-- [Font Awesome] - Icons 
-- [React Router] - Routing
-- [Formik, yup] - Forms
+- [React](https://react.dev/) - Framework
+- [Redux](https://redux-toolkit.js.org/) - Store manager
+- [RTK Query](https://redux-toolkit.js.org/rtk-query/overview) - Async request
+- [Font Awesome](https://fontawesome.com/) - Icons 
+- [React Router](https://reactrouter.com/en/main/upgrading/v5) - Routing
+- [Formik, yup](https://formik.org/) - Forms
 
 ## Installation
 
