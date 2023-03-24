@@ -27,8 +27,13 @@ function Item({
   //navigation
   const navigate = useNavigate();
 
+  //navigation func, passing item into nav props
   const handleNavigate = (item: Product) => {
-    navigate(`/${item.id}`);
+    navigate(`/${item.id}`, {
+      state: {
+        item,
+      }
+    });
   };
 
   //redux actions
@@ -46,9 +51,17 @@ function Item({
       <td style={{ cursor: "pointer" }} onClick={() => handleNavigate(item!)}>
         {description}
       </td>
-      <td>{price}</td>
+      <td>{price}€</td>
       <td>
-        <a href={`${thumbnail}`}>{thumbnail}</a>
+        {thumbnail ? (
+          <img
+            src={thumbnail}
+            alt="product"
+            style={{ width: "80px", backgroundSize: "contain", height: 60 }}
+          />
+        ) : (
+          <span>Photo</span>
+        )}
       </td>
       <td>{rating}</td>
       <td>{stock}</td>
