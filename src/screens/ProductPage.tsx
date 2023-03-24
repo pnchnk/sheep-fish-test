@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBackward } from "@fortawesome/free-solid-svg-icons";
 
 function ProductPage() {
-  //getting item from location 
+  //getting item from location
   const location = useLocation();
   let item = location.state.item;
 

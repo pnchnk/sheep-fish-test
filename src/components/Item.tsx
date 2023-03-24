@@ -32,7 +32,7 @@ function Item({
     navigate(`/${item.id}`, {
       state: {
         item,
-      }
+      },
     });
   };
 
